@@ -45,7 +45,7 @@ nav{
     transition: 0.3s;
     font-weight: bold;
 }
-.login{
+.login, .learn{
     color: #f2c201;
     background-color: black;
     border: 2px solid #f2c201;
@@ -56,7 +56,7 @@ nav{
     border: none;
     cursor: pointer;
 }
-.signup{
+.signup, .ordering{
     background-color:  #f2c201;
     color: white;
     border: none;
@@ -66,4 +66,40 @@ nav{
     background-color: black;
     border: 2px solid #f2c201;
     cursor: pointer;
+}
+
+/* now the mid part */
+main{
+    display: flex;
+    color: white;
+    /* background-color: pink; */
+    margin-top: 10px;
+}
+.view{
+    width: 550px;
+    margin-left: 35px;
+}
+.heading{
+    margin-top: 70px;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.content{
+    font-size: 21px;
+    color:gray;
+    margin-bottom: 10px;
+}
+.ordering{
+    padding: 4px 20px;
+    font-size: 21px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+.learn{
+    padding: 4px 20px;
+    font-size: 21px;
+    color: white;
+    border: 2px solid #f2c201;
+    cursor: pointer;
+    border-radius: 4px;
 }
