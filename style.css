@@ -1,17 +1,22 @@
 *{
     margin:0;
     padding: 0;
+    font-family: Arial, sans-serif;
 }
 body{
     background-color: black;
-    font-family: Arial, sans-serif;
+    height: 750px;
 }
 nav{
     /*display flex taaki mai ek row me laa paau unhe, align items center taaki vo center hojaye vertically*/
     display: flex; 
     justify-content: space-between;
+    background-color: black;
     align-items: center;
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     padding: 10px 50px;
     height: 80px;
 }
@@ -33,7 +38,6 @@ nav{
     transition: 0.3s;
 }
 
-
 .right{
     display: flex;
    gap: 20px;
@@ -52,7 +56,7 @@ nav{
 }
 .login:hover{
     background-color:  #f2c201;
-    color: white;
+    color: black;
     border: none;
     cursor: pointer;
 }
@@ -63,8 +67,8 @@ nav{
 }
 .signup:hover{
     color: #f2c201;
-    background-color: black;
-    border: 2px solid #f2c201;
+    background-color: white;
+    border: none;
     cursor: pointer;
 }
 
@@ -73,11 +77,14 @@ main{
     display: flex;
     color: white;
     /* background-color: pink; */
-    margin-top: 10px;
+    margin-top: 90px;
 }
 .view{
-    width: 550px;
+    flex: 1;
     margin-left: 35px;
+}
+.coffee{
+    width: 400px;
 }
 .heading{
     margin-top: 70px;
@@ -102,4 +109,88 @@ main{
     border: 2px solid #f2c201;
     cursor: pointer;
     border-radius: 4px;
+}
+
+/* last part: menu */
+footer{
+    border: 2px solid #f2c201;
+    margin: 0px 35px;
+    border-radius: 16px;
+    height: 250px;
+}
+.head{
+    color: white;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+    margin: 20px 0px;
+}
+.foot{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+.swipe{
+    margin: 0px 15px;
+}
+.swipe img{
+    width: 35px;
+}
+
+.board{
+    display: flex;
+    /* justify-content: spac; */
+    gap: 50px;
+}
+.menu{
+    background-color: rgba(28, 28, 28, 0.9);
+    display: flex;
+    /* align-items: center; row ke hisab se*/
+    /* justify-content: center; column ke hisab se */
+    width: 400px;
+    height: 150px;
+    border: 2px solid #f2c20110;
+    border-radius: 10px;
+}
+.coffee-pic{
+    width: 150px;
+    display: flex;
+    align-items: center;
+}
+.coffee-pic img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: 10px;
+}
+
+.coffee-content{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.heading2{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 15px 20px;
+}
+.def{
+    color: gray;
+    font-size: 15px;
+    margin: 10px 20px;
+
+}
+.price{
+    color:  #f2c201;
+    font-size: 25px;
+    font-weight: 650;
+    margin-left: 20px;
+}
+.add{
+      width: 25px;
+      height: 25px;  
+      margin-left: 210px;
+      margin-bottom: 10px;
 }
